@@ -1,19 +1,10 @@
-/*
- * Possible improvements for this stylesheet:
- * - Impact and Calibri are not installed on every system (Calibri is missing on most Mac and Linux machines); use a web font or a fuller fallback list.
- * - consider sharing one stylesheet across all pages so the site looks consistent.
- */
-
 body{
-    /* IMPROVEMENT: tidy the extra spaces after the colon. */
-    /* IMPROVEMENT: margin: 0 and padding: 0 remove all breathing room; add padding or use a container. */
     background-color:   #acd3f8;
     margin: 0;
     padding: 0;
 }
 
 h1{
-    /* IMPROVEMENT: underlined headings look like links; use a border-bottom or colour instead. */
     text-decoration: underline;
     font-family: 'Impact', sans-serif;
     font-size: 50px;
@@ -33,13 +24,11 @@ p{
     margin-top: 20px;
 }
 
-/* IMPROVEMENT: paragraphs are centred but the list is left aligned; pick one alignment so the page reads consistently. */
 ul{
     list-style-type: square;
 }
 
 img{
-    /* IMPROVEMENT: add width: 100% (with this max-width) or height: auto so images scale cleanly on small screens. */
     max-width: 400px;
     border: 2px solid black;
     border-radius: 50px;
