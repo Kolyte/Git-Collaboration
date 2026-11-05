@@ -1,8 +1,12 @@
 
 <!DOCTYPE html>
+<!-- IMPROVEMENT: remove the blank line above the DOCTYPE; it should be the very first line. -->
+<!-- IMPROVEMENT: rename this file without spaces (for example ai-in-healthcare.html); spaces in URLs become %20 and are easy to break. -->
 <html lang="en">
 
 <head>
+    <!-- IMPROVEMENT: add meta charset="utf-8" and a viewport meta tag; without them characters can display wrongly and the page will not scale on phones. -->
+    <!-- IMPROVEMENT: add a meta description. -->
     <title>AI in Healthcare</title>
 
     
@@ -18,12 +22,16 @@
 
 <body class = "container">
 
+    <!-- IMPROVEMENT: add the missing VAR link so every page has the same menu. -->
+    <!-- IMPROVEMENT: mark the current page with aria-current="page" and a different style. -->
     <nav class="mt-3">
         <a href="index.html" class="btn btn-primary">Home</a>
         <a href="AI in healthcare.html" class="btn btn-primary">Healthcare</a>
         <a href="parking_sensors.html" class="btn btn-primary">Parking Sensors</a>
         <a href="renewableEnergy.html" class="btn btn-primary">Renewable Energy</a>
     </nav>
+    <!-- IMPROVEMENT: the text-primary class is overridden by the h1 colour in the stylesheet; keep one of them. -->
+    <!-- IMPROVEMENT: remove the spaces around = in class attributes. -->
     <h1 class ="text-primary text-center mt-4">
         AI in Healthcare
     </h1>
@@ -35,6 +43,9 @@
         patient care.
     </p>
 
+    <!-- IMPROVEMENT: this img has two alt attributes; keep one descriptive alt (the second also misspells doctor). -->
+    <!-- IMPROVEMENT: width=400 duplicates the CSS width; remove it, or quote the value. -->
+    <!-- IMPROVEMENT: rename the image without spaces (for example doctor-using-ai.jpg). -->
     <img src="Doc using ai.jpg" alt="Doctor using AI"
          alt = "docter using AI"
          class = "img-fluid rounded"
@@ -51,6 +62,7 @@
     </ol>
 
     <h2>Benefits to Society (in short)</h2>
+    <!-- IMPROVEMENT: present the benefits as a list with bold labels instead of p and br, so each benefit is clearly separated. -->
 
     <p>
         AI can support faster diagnosis and help
@@ -61,8 +73,11 @@
             Image-recognition and computer-vision tools spot abnormalities (such as cancer, strokes, or fractures) in scans earlier and with high precision.
     </p>
     <p>Reduced Clinician Burnout: 
+        <!-- IMPROVEMENT: add a source for the claim about millions of working hours, and end the sentence with a full stop. -->
         Ambient AI scribes, automated documentation, and administrative tools free up millions of working hours for doctors and nurses to focus on direct patient care</p>
 
+    <!-- IMPROVEMENT: shorten this heading to Further reading and put the links in a ul list instead of using br. -->
+    <!-- IMPROVEMENT: add rel="noopener" and target="_blank" if links should open in a new tab. -->
     <h2>Further Reading external links</h2>
 
     <a href="https://www.who.int/health-topics/digital-health">
@@ -76,6 +91,7 @@
 
     <br>
 
+    <!-- IMPROVEMENT: consider a shared footer with the author credit and a link back to the home page, used on every page. -->
     <p>Author: Yashwardhan Singh Khatri</p>
 
 </body>

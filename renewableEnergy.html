@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- IMPROVEMENT: the html tag is opened twice and closed after the script tag, before the body; use one html element that wraps both head and body. -->
 <html lang="en"> <!--Sets language of the webpage-->
 
+<!-- IMPROVEMENT: add meta charset="utf-8", a viewport meta tag and a title element; the page currently has no title in the browser tab. -->
 <!-- Linking to Bootstrap 5 stylesheet -->
 <!--CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <!--JavaScript-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!-- IMPROVEMENT: close the head element here with a closing head tag instead of a closing html tag. -->
 </html>
 
 
+<!-- IMPROVEMENT: move these inline styles into a separate CSS file like the other pages use. -->
 <body style="background-color:powderblue; padding-left: 5px">
+  <!-- IMPROVEMENT: add the missing VAR link so every page has the same menu. -->
   <nav class="container mt-3 mb-4">
       <a href="index.html" class="btn btn-primary">Home</a>
 
@@ -33,22 +38,36 @@
   <h1>Renewable Energy Sources</h1>
 </div>
 <div>
+  <!-- IMPROVEMENT: a page should have only one h1; make this an h2. -->
   <h1>What is Renewable Energy?</h1>
+  <!-- IMPROVEMENT: use a p element for the author line; h6 is a heading, not a byline. -->
   <h6>By Sofia</h6>
   <blockquote class="blockquote">
     <p>"Renewable energy is energy that comes from a source that won’t run out. They are natural and 
     self-replenishing, and usually have a low- or zero-carbon footprint." </p>
+    <!-- IMPROVEMENT: fix the typo clss to class. -->
+    <!-- IMPROVEMENT: the blockquote is never closed; add a closing blockquote tag. -->
+    <!-- IMPROVEMENT: Bootstrap 5 expects figure, blockquote and figcaption for quotes with a source; also link to the National Grid source. -->
     <footer clss="blockquote-footer">- National Grid (2022)</footer>
 </div>
 <h2>Types of Renewable Energy:</h2>
 <h3>Wind:</h3>
+<!-- IMPROVEMENT: check this claim: wind is the largest renewable source in the UK, but hydroelectric is larger worldwide. Say which one you mean. -->
+<!-- IMPROVEMENT: reword converts the kinetic energy ... and convert it, which repeats convert. -->
 <p>The most common way to produce renewable energy. Collected through turbines which convert the kinetic energy 
   produced when the turbines move due to wind and convert it into electrical energy.</p>
+<!-- IMPROVEMENT: fix the typos in the alt text (ENergy, Foudations). -->
+<!-- IMPROVEMENT: width 300 and height 600 stretch the photo; set only width (or use img-fluid) to keep its proportions. -->
+<!-- IMPROVEMENT: WindEnergy.jpg is about 1.8 MB; compress it so the page loads faster. -->
 <img src = "WindEnergy.jpg" alt = "Wind Turbines - National ENergy Foudations" width="300" height="600">
 <h3>Solar:</h3>
+<!-- IMPROVEMENT: fix the typo Coverts to Converts and add a full stop. -->
+<!-- IMPROVEMENT: add images for solar, hydroelectric and bioenergy to match the wind section. -->
 <p>Can be collected through solar panels. Coverts energy collected from photons in light into electrical energy</p>
 <h3>Hydroelectric:</h3>
 <p>Can be found in hydroelectric dams. The technology uses water flow as a kinetic energy source to be able to produce electrical energy</p>
 <h3>Bioenergy:</h3>
+<!-- IMPROVEMENT: the Bioenergy section is empty; add its description. -->
+<!-- IMPROVEMENT: add a references section, an author footer, and the closing body and html tags. -->
 
 

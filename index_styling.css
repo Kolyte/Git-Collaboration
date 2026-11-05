@@ -1,3 +1,11 @@
+/*
+ * Possible improvements for this stylesheet:
+ * - add a fallback background-color in case the image fails to load.
+ * - add background-position: center so the image crops evenly on different screen sizes.
+ * - check text contrast over the background image; a semi transparent panel behind the heading would keep it readable.
+ * - compress index_background.jpg or use a modern format such as WebP to speed up loading.
+ */
+
 body {
     background-image: url('index_background.jpg');
     background-repeat: no-repeat;

@@ -1,24 +1,32 @@
 <!DOCTYPE html>
+<!-- IMPROVEMENT: add a meta description so search engines and link previews can summarise the site. -->
+<!-- IMPROVEMENT: add a site wide navigation bar matching the other pages so visitors see the same menu everywhere. -->
 <html lang="en-us">
 
 <head>
     <meta charset="utf-8">
+    <!-- IMPROVEMENT: use content="width=device-width, initial-scale=1" so phones do not zoom out on load. -->
     <meta name="viewport" content="width=device-width">
     <title>Git Collaboration</title>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
+    <!-- IMPROVEMENT: add the defer attribute (or move this script to the end of body) so it does not block the page from rendering. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- IMPROVEMENT: remove the space after rel= to keep attribute formatting consistent. -->
     <link rel= "stylesheet" href="index_styling.css">
 </head>
 
 <body>
     <div class="container p-5 my-5 text-center">
         <h1>Welcome!</h1>
+        <!-- IMPROVEMENT: add a sentence explaining what the site is about, so visitors know why the four topics are grouped together. -->
         <p>Git Collaboration Site by Sofia, Max, Yash, Jack, and Sammy.</p>
     </div>
 
+    <!-- IMPROVEMENT: wrap these topic links in a nav element (or Bootstrap cards with a short description each) so screen readers announce them as navigation. -->
+    <!-- IMPROVEMENT: indent the contents of this div so the nesting is easy to follow. -->
     <div class="text-center">
     <a href="parking_sensors.html" class="btn btn-light">
         Parking Sensors
@@ -28,6 +36,7 @@
         Renewable Energy
     </a>
 
+    <!-- IMPROVEMENT: once the file is renamed without spaces (for example ai-in-healthcare.html), update this link. -->
     <a href="AI in healthcare.html" class="btn btn-light">
         AI in Healthcare
     </a>
@@ -36,8 +45,10 @@
         VAR
     </a>
 </div>
+<!-- IMPROVEMENT: this closing div has no matching opening tag; delete it. -->
 </div>
 
+<!-- IMPROVEMENT: a fixed button can cover page content on small screens; consider moving the credit into a footer instead. -->
 <button type="button"
         class="btn btn-primary position-fixed bottom-0 start-50 translate-middle-x mb-3"
         data-bs-toggle="modal"
@@ -45,16 +56,22 @@
     Landing Page By Jack
 </button>
     
+<!-- IMPROVEMENT: add class="modal fade", tabindex="-1" and aria-labelledby pointing at the title id so the dialog animates and is announced properly. -->
+<!-- IMPROVEMENT: rename id="myModal" to something descriptive such as creditsModal. -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
         <h4 class="modal-title">Landing Page by Jack Politi</h4>
+        <!-- IMPROVEMENT: add aria-label="Close" so screen readers can name this button. -->
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <div class="modal-body">
+        <!-- IMPROVEMENT: use a list (ul/li) instead of empty p tags for spacing; empty paragraphs are invalid as spacers. -->
+        <!-- IMPROVEMENT: add target="_blank" rel="noopener" to external links if they should open in a new tab. -->
+        <!-- IMPROVEMENT: add credits for the other four authors, not just the landing page author. -->
         LinkedIn: <a href="https://www.linkedin.com/in/jack-politi/">Jack Politi</a>
         <p></p>
         Instagram: <a href="https://www.instagram.com/jack.politi/">Jack Politi</a>

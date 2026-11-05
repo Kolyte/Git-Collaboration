@@ -1,3 +1,11 @@
+/*
+ * Possible improvements for this stylesheet:
+ * - this stylesheet is also used by var.html; rename it to something shared such as style.css, or give VAR its own file.
+ * - rename the file without spaces (for example ai-in-healthcare.css).
+ * - define repeated colours once as CSS variables in :root; rgb(2, 2, 63) and rgb(2, 2, 65) look like the same colour typed twice.
+ * - remove the blank lines at the top of the rules below.
+ */
+
 
 
 body {
@@ -16,6 +24,7 @@ h1 {
 h2 {
     color: rgb(2, 2, 65);
     margin-top: 25px;
+    /* IMPROVEMENT: only headings are indented, so they no longer line up with the paragraphs below; indent both or neither. */
     margin-left: 50px;
 }
 
@@ -32,6 +41,7 @@ nav {
 
 
 nav a {
+    /* IMPROVEMENT: light cyan text on Bootstrap blue buttons has very low contrast; use white or let btn-primary set the colour. */
     color: rgb(152, 241, 237);
     margin-right: 20px;
 }
