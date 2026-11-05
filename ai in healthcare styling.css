@@ -14,7 +14,7 @@ h1 {
 
 
 h2 {
-    color: darkblue;
+    color: rgb(2, 2, 65);
     margin-top: 25px;
     margin-left: 50px;
 }
@@ -26,13 +26,13 @@ p {
 
 
 nav {
-    background-color: lightblue;
+    background-color: rgb(155, 226, 250);
     padding: 15px;
 }
 
 
 nav a {
-    color: darkblue;
+    color: rgb(152, 241, 237);
     margin-right: 20px;
 }
 
